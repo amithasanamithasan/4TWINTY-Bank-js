@@ -12,4 +12,14 @@ document.getElementById('btn-submit').addEventListener('click',function(){
  const passwordField = document.getElementById('user-pass');
  const password= passwordField.value; 
 //  console.log(email, password);
+// donot varify email password on the clint side
+// step4: verify email and password
+ if(email==='amit@gmail.com' && password ==='secret'){
+    window.location.href='bank.html';
+     console.log('valid user') 
+ }
+     
+     else{
+    console.log('invalid user please enter your privet email and password');
+ }
 })
