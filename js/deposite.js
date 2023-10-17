@@ -19,7 +19,14 @@ const Totlamount= previousdepositotal+newdepositamount;
 // console.log(Totlamount);
 depositTotalElement.innerText= Totlamount;
 
+// step 5->get balance current total
+const BalanceTotalElement=document.getElementById('balance-total');
 
+const previousbalancetotalstring=BalanceTotalElement.innerText;
+const previousbalancetotal=parseFloat(previousbalancetotalstring);
+// step6 -> claculet current total balance
+const CurrentBlanceToatal=previousbalancetotal+newdepositamount;
+BalanceTotalElement.innerText=CurrentBlanceToatal;
 // step 7 -> clear the deposit field
 addDeposit.value='';
 })
