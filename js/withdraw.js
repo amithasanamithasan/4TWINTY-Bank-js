@@ -16,5 +16,11 @@ const previouseWithdrawTotal=parseFloat(previouseWithdrawTotalString);
 const Currentwithdrawtotal=previouseWithdrawTotal+newwithdrawAmount;
 
 withdrawTotalElement.innerText=Currentwithdrawtotal;
+
+const balanceTotalElement=document.getElementById('balance-total');
+const previousbalancetotalstring=balanceTotalElement.innerText;
+const previousBalancetotal=parseFloat(previousbalancetotalstring);
+const newBalanceTotal=previousBalancetotal-newwithdrawAmount;
+balanceTotalElement.innerText=newBalanceTotal;
 withdrawField.value='';
 })
